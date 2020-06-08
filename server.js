@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Oleg's application." });
+  res.json({ message: "Customers API application." });
 });
 
 require("./app/routes/customer.routes.js")(app);
